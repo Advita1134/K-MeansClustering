@@ -34,7 +34,7 @@ X_test = np.array([[7.5],[1],[6.5],[-7], [9], [5], [-4], [6], [5.5]])
 model = KMeans(n_clusters = 2) # n_clusters is the amount of groups.
 
 # Training/Learning/Fitting
-model.fit(X_train)
+model.fit(X_train) ## !!! K-Means Clustering is unsupervised machine learning algorithm, so it does not use y-train values (y-train already contains the real answers). !!! 
 
 # Testing/Prediction
 pred = model.predict(X_test) # prediction of main test data
