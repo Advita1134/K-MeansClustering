@@ -17,19 +17,7 @@ X,y = make_blobs(n_samples = 100, n_features = 1, centers = 2, cluster_std = .7)
 ## This splits the data from the previous line into testing and training data. 
 ## It usually does this by putting 75% of the data from the previous line for training and the rest for testing.
 X_train, X_test, y_train, y_test = train_test_split(X,y)
-'''
-# Data
-X_train = np.array([[2],
-             [3],
-             [2.5],
-             [8],
-             [9],
-             [11],
-             [5],
-             [7]])
 
-X_test = np.array([[7.5],[1],[6.5],[-7], [9], [5], [-4], [6], [5.5]])
-'''
 # Model (Pick Algorithm)
 model = KMeans(n_clusters = 2) # n_clusters is the amount of groups.
 
