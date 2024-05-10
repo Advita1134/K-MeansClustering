@@ -32,6 +32,8 @@ trainzeros = len(X_train) *[0]
 testzeros = len(X_test) * [0]
 clustercenters = model.cluster_centers_
 centerzeros = len(clustercenters) * [0]
+
+# Plotting
 # You use c when you have a list of numbers for colors. You use color when you have a specific color.
 plt.scatter(X_train, trainzeros, label = "Train Data", s = 30, ) # Training data is the circles.
 plt.scatter(clustercenters, centerzeros , label = "Cluster Centers for Training Data", s = 200, color = "red", alpha = .5)
